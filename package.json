@@ -6,17 +6,31 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prettier:check": "prettier --config .prettierrc.json --check .",
+    "prettier:format": "prettier --config .prettierrc.json --write . --ignore-unknown",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*": "yarn prettier:format"
+  },
+  "engines": {
+    "node": "18.1.0",
+    "npm": "8.8.0",
+    "yarn": "1.22.11"
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "sass": "^1.54.3"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.3.0",
     "@types/react": "^18.0.16",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.0",
+    "sass": "^1.54.3",
+    "husky": "^7.0.0",
+    "prettier": "^2.7.1",
     "typescript": "^4.6.4",
     "vite": "^3.0.4"
   }

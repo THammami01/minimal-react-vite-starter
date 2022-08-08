@@ -1,10 +1,14 @@
 {
   "files.exclude": {
+    ".husky": true,
     "node_modules": true,
     "public": true,
     ".dccache": true,
     ".env": true,
     ".gitignore": true,
+    ".editorconfig": true,
+    ".prettierignore": true,
+    ".prettierrc.json": true,
     "index.html": true,
     "tsconfig.json": true,
     "tsconfig.node.json": true,
