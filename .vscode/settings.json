@@ -5,7 +5,7 @@
     "public": true,
     ".dccache": true,
     ".env": true,
-    ".gitignore": true,
+    // ".gitignore": true,
     ".editorconfig": true,
     ".prettierignore": true,
     ".prettierrc.json": true,
