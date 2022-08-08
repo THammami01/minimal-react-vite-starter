@@ -14,6 +14,8 @@
     "tsconfig.node.json": true,
     "vite.config.ts": true,
     "yarn.lock": true,
+    "screenshot.png": true,
+    "README.md": true,
     "**/*.d.ts": true,
   }
 }

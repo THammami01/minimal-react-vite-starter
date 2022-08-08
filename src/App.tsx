@@ -1,7 +1,10 @@
-import _styles from './App.module.scss';
+import { FC } from 'react';
 
-const App = () => {
-  return <div>Hello, {import.meta.env.VITE_SECRET}!</div>;
+import _styles from './App.module.scss';
+import Router from './Router';
+
+const App: FC = () => {
+  return <Router />;
 };
 
 export default App;

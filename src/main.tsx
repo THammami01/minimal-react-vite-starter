@@ -4,9 +4,12 @@ import ReactDOM from 'react-dom/client';
 
 import App from './App';
 import './index.scss';
+import Providers from './lib/Providers';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <Providers>
+      <App />
+    </Providers>
   </React.StrictMode>
 );
